@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int salary = sc.nextInt();
+        double HRA,DA; 
+        
+        if (salary < 15000){
+            HRA = (salary * 0.15);
+            DA = (salary * 0.90);
+        }
+        else {
+            HRA = 5000;
+            DA = (salary * 0.98);
+            
+        }
+        System.out.printf("%.2f",salary + HRA + DA);
+            
+        
+    }
+}
