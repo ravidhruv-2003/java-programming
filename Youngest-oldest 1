@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+        int size = sc.nextInt();
+        int a[]= new int[size];
+        for (int i =0 ; i<size; i++){
+            a[i]=sc.nextInt();
+           int b = a[i];
+             //System.out.print(b);
+            
+            
+        }
+        int small = a[0];
+     
+         for(int j=0;j<size;j++ ) {
+              if(small > a[j]){
+            small=a[j];
+                
+        }
+    } System.out.println("Youngest="+small);
+     int big = a[0];
+    
+    for(int k=0;k<size;k++){
+        if (big < a[k]){
+            big = a[k];
+        }
+    }System.out.println("Oldest="+big);
+}}
